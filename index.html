@@ -4,18 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Products</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/clear-list.css">
+  <link rel="stylesheet" href="style/title.css">
+  <link rel="stylesheet" href="style/products.css">
+  <link rel="stylesheet" href="style/main-text.css">
+  <link rel="stylesheet" href="style/button.css">
+  <link rel="stylesheet" href="style/card.css">
+  <link rel="stylesheet" href="style/catalog.css">
 </head>
 <body>
-     <h1 class="title">Выбери свой продукт</h1> 
-       <ul class="product-list">
-          <li class="product-card">
+  <main class="catalog">
+     <h1 class="title catalog-title">Выбери свой продукт</h1> 
+       <ul class="products clear-list">
+          <li class="product-item card">
             <div class="product-header">
               <img src="assets/moisturizing-mousse.jpg" alt="Увлажняющий мусс">
               </div> 
-               <span class="skin type">Для нормальной кожи</span>
-              <h2>Увлажняющий мусс</h2>
-              <p class="main-text">Глубоко увлажняют кожу лица, оставляя её мягкой и гладкой.</p>
+               <span class="card-category">Для нормальной кожи</span>
+              <h2 class="card-name">Увлажняющий мусс</h2>
+               <div class="card-description">
+                  <p class="main-text">Глубоко увлажняют кожу лица, оставляя её мягкой и гладкой.</p>
+               </div>
               <span class="main-text">СОСТАВ:</span>
 
               <ul>
@@ -28,14 +38,15 @@
                <button class="button">Купить</button>
           </li> 
 
-           <li class="product-card">
+           <li class="product-item card">
            <div class="product-header">
              <img src="assets/moisturizing-mask.jpg" alt="Увлажняющая маска">
               </div>  
-               <span class="skin type">Для нормальной кожи</span>
-              <h2>Увлажняющая маска</h2>
-              <p class="main-text">Способствует удерживанию влаги в верхних слоях кожи.</p>
-
+               <span class="card-category">Для нормальной кожи</span>
+              <h2 class="card-name">Увлажняющая маска</h2>
+              <div class="card-description">
+                <p class="main-text">Способствует удерживанию влаги в верхних слоях кожи.</p>
+              </div>
               <span class="main-text">СОСТАВ:</span>
 
               <ul>
@@ -48,13 +59,15 @@
                <button class="button button-green">Купить</button>
           </li> 
       
-          <li class="product-card">
+          <li class="product-item card">
             <div class="product-header">
             <img src="assets/cleansing-gel.jpg" alt="Гель для умывания">
             </div>
-               <span class="skin type">Для нормальной кожи</span>
-              <h2>Гель для умывания</h2>
-              <p class="main-text">Интенсивно очищает,не повреждает защитный барьер кожи</p>
+               <span class="card-category">Для нормальной кожи</span>
+              <h2 class="card-name">Гель для умывания</h2>
+              <div class="card-description">
+                <p class="main-text">Интенсивно очищает,не повреждает защитный барьер кожи</p>
+              </div>
 
               <span class="main-text">СОСТАВ:</span>
 
@@ -71,13 +84,15 @@
         
 
         
-          <li class="product-card">
+          <li class="product-item card">
             <div class="product-header">
               <img src="assets/gift-set-number-one.jpg" alt="Подарочный набор №1">
             </div>
-            <span class="skin type">Для нормальной кожи</span>
-              <h2>Подарочный набор №1</h2>
+            <span class="card-category">Для нормальной кожи</span>
+              <h2 class="card-name">Подарочный набор №1</h2>
+              <div class="card-description">
               <p class="main-text">Набор, состоящий из увлажняющего крема и маски.</p>
+              </div>
               <span class="main-text">СОСТАВ:</span>
               <ul>
                 <li>воски</li>
@@ -92,13 +107,15 @@
         
 
         
-           <li class="product-card">
+           <li class="product-item card">
             <div class="product-header">
              <img src="assets/gift-set-number-five.jpg" alt="Подарочный набор №5">
             </div>
-             <span class="skin type">Для нормальной кожи</span>
-              <h2>Подарочный набор №5</h2>
-              <p class="main-text">Весь набор средств Invisible symphony, крем, маска, мусс и гель для умывания.</p>
+             <span class="card-category">Для нормальной кожи</span>
+              <h2 class="card-name">Подарочный набор №5</h2>
+              <div class="card-description">
+                <p class="main-text">Весь набор средств Invisible symphony, крем, маска, мусс и гель для умывания.</p>
+              </div>
               <span class="main-text">СОСТАВ:</span>
               <ul>
                 <li>воски</li>
@@ -111,5 +128,6 @@
                 <button class="button button-black">Купить</button>
             </li>
        </ul>
+  </main>
 </body>
 </html>
