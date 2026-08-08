@@ -3,11 +3,37 @@ body {
     font-size: 13px;
     line-height: 18px;
     background-color: #f7f7fa;
-    background-image: url("assets/background.jpg");
+    background-image: url("../assets/background.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
+
+.main-text {
+    color: #515076;
+}
+
+.product-item {
+    max-width: 300px;
+    list-style: none;
+    margin: 25px;
+    padding: 45px;
+    background-color: #f7f7fa;
+}
+
+
+ .product-header {
+   width: 290px;
+height: 245px;
+margin-top:30px;
+margin-bottom: 15px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 
 .title {
     font-size: 70px;
@@ -19,11 +45,41 @@ body {
 }
 
 
-.main-text {
-    color: #515076;
+.clear-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.button {
+.catalog-title {
+  margin-bottom: 110px;
+  margin-top: 220px;
+}
+
+
+.card-name {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0;
+}
+
+ .card-description {
+    font-size: 13px;
+    line-height: 18px;
+    margin-top:10px;
+    margin-bottom:15px;}
+
+.card-category {
+    font-size: 13px;
+    line-height: 18px;
+    color: #A5A3B9;
+    text-transform: uppercase;}
+
+  .card-description p:first-child {
+    margin-top: 0;}
+
+
+    .button {
     background-color: #515076;
     color: #fff;
     border: 1px solid #000;
@@ -42,24 +98,10 @@ body {
 .button-black {
     background-color: #000000
 }
-.product-card {
-    max-width: 300px;
-    list-style: none;
-    margin: 25px;
-    padding: 45px;
-    background-color: #f7f7fa;}
 
 
- .product-header {
-   width: 290px;
-height: 245px;
-margin-top:30px;
-margin-bottom: 15px;
-}
 
-.product-list {
-    display: flex;
-    flex-wrap: wrap;
-}
+
+
 
     
