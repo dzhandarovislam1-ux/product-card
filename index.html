@@ -1,115 +1,137 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Products</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-     <h1 class="title">Выбери свой продукт</h1> 
-       <ul class="product-list">
-          <li class="product-card">
-            <div class="product-header">
-              <img src="assets/moisturizing-mousse.jpg" alt="Увлажняющий мусс">
-              </div> 
-               <span class="skin type">Для нормальной кожи</span>
-              <h2>Увлажняющий мусс</h2>
-              <p class="main-text">Глубоко увлажняют кожу лица, оставляя её мягкой и гладкой.</p>
-              <span class="main-text">СОСТАВ:</span>
+  <main class="catalog">
+    <div class="container catalog__container">
+      <h1 class="title catalog__title">Выбери свой продукт</h1>
+      <ul class="products clear-list">
+        <li class="products__item card">
+          <img src="assets/moisturizing-mousse.jpg" alt="Увлажняющий мусс" class="card__image">
+          <span class="card__category">Для нормальной кожи</span>
+          <h2 class="card__name">Увлажняющий мусс</h2>
+          <p class="card__description">Глубоко увлажняют кожу лица,оставляя её мягкой и гладкой.</p>
 
-              <ul>
-                <li>активные натуральные комплексы</li>
-                <li>витамины С, А, РР, В И Е</li>
-                <li>солнцезащитные компоненты</li>
-              </ul>
-               <b class="main-text">ЦЕНА:</b>
-               <span>2 750 &#8381</span>
-               <button class="button">Купить</button>
-          </li> 
+          <div class="card__compound compound"
+           <span class="compound__name">СОСТАВ:</span>
+            <ul class="compound__list">
+              <li>активные натуральные комплексы</li>
+              <li>витамины С, А, РР, В И Е</li>
+              <li>солнцезащитные компоненты</li>
+            </ul>
+          </div>
 
-           <li class="product-card">
-           <div class="product-header">
-             <img src="assets/moisturizing-mask.jpg" alt="Увлажняющая маска">
-              </div>  
-               <span class="skin type">Для нормальной кожи</span>
-              <h2>Увлажняющая маска</h2>
-              <p class="main-text">Способствует удерживанию влаги в верхних слоях кожи.</p>
+          <div class="card__price">
+            <b>Цена</b>
+            <span>2 750 &#8381</span>
+            <button class="button">Купить</button>
+          </div>
+        </li>
 
-              <span class="main-text">СОСТАВ:</span>
+        <li class="products__item card">
+          <img src="assets/moisturizing-mask.jpg" alt="Увлажняющая маска" class="card__image">
+          <span class="card__category">Для нормальной кожи</span>
+          <h2 class="card__name">Увлажняющая маска</h2>
+          <p class="card__description">Способствует удерживанию влаги в верхних слоях кожи.</p>
 
-              <ul>
-                <li>воски</li>
-                <li>минералы</li>
-                <li>масла</li>
-              </ul>
-               <b class="main-text">ЦЕНА:</b>
-               <span>3 500 &#8381</span>
-               <button class="button button-green">Купить</button>
-          </li> 
-      
-          <li class="product-card">
-            <div class="product-header">
-            <img src="assets/cleansing-gel.jpg" alt="Гель для умывания">
-            </div>
-               <span class="skin type">Для нормальной кожи</span>
-              <h2>Гель для умывания</h2>
-              <p class="main-text">Интенсивно очищает,не повреждает защитный барьер кожи</p>
+          <div class="card__compound compound">
+            <span class="compound__name">СОСТАВ:</span>
+            <ul class="compound__list">
+              <li>воски</li>
+              <li>минералы</li>
+              <li>масла</li>
+            </ul>
+          </div>
 
-              <span class="main-text">СОСТАВ:</span>
+          <div class="card__price">
+            <b>Цена</b>
+            <span>3 500 &#8381</span>
+            <button class="button button-blue">Купить</button>
+          </div>
+        </li>
 
-              <ul>
-                <li>минералы</li>
-                <li>витамины C,A,PP,B И E</li>
-                <li>солнцезащитные компоненты</li>
-              </ul>
-               <b class="main-text">ЦЕНА:</b>
-               <span>1 650 &#8381</span>
 
-               <button class="button button-blue">Купить</button>
-          </li>
-        
 
-        
-          <li class="product-card">
-            <div class="product-header">
-              <img src="assets/gift-set-number-one.jpg" alt="Подарочный набор №1">
-            </div>
-            <span class="skin type">Для нормальной кожи</span>
-              <h2>Подарочный набор №1</h2>
-              <p class="main-text">Набор, состоящий из увлажняющего крема и маски.</p>
-              <span class="main-text">СОСТАВ:</span>
-              <ul>
-                <li>воски</li>
-                <li>минералы</li>
-                <li>масла</li>
-              </ul>
-                <b class="main-text">ЦЕНА:</b>
-                <span>4 750 &#8381</span>
-  
-                <button class="button button-red">Купить</button>
-          </li>
-        
+        <li class="products__item card">
+          <img src="assets/cleansing-gel.jpg" alt="Гель для умывания" class="card__image">
+          <span class="card__category">Для нормальной кожи</span>
+          <h2 class="card__name">Гель для умывания</h2>
+          <p class="card__description">Интенсивно очищает,не повреждает защитный барьер кожи</p>
 
-        
-           <li class="product-card">
-            <div class="product-header">
-             <img src="assets/gift-set-number-five.jpg" alt="Подарочный набор №5">
-            </div>
-             <span class="skin type">Для нормальной кожи</span>
-              <h2>Подарочный набор №5</h2>
-              <p class="main-text">Весь набор средств Invisible symphony, крем, маска, мусс и гель для умывания.</p>
-              <span class="main-text">СОСТАВ:</span>
-              <ul>
-                <li>воски</li>
-                <li>минералы</li>
-                <li>масла</li>
-              </ul>
-                <b class="main-text">ЦЕНА:</b>
-                <span>7520 &#8381</span>
-  
-                <button class="button button-black">Купить</button>
-            </li>
-       </ul>
+          <div class="card__compound compound">
+            <span class="compound__name">СОСТАВ:</span>
+            <ul class="compound__list">
+              <li>минералы</li>
+              <li>витамины C,A,PP,B И E</li>
+              <li>солнцезащитные компоненты</li>
+            </ul>
+          </div>
+
+          <div class="card__price">
+            <b>Цена</b>
+            <span>1 650 &#8381</span>
+            <button class="button button-green">Купить</button>
+          </div>
+        </li>
+
+
+
+        <li class="products__item card">
+          <img src="assets/gift-set-number-one.jpg" alt="Подарочный набор №1" class="card__image">
+          <span class="card__category">Для нормальной кожи</span>
+          <h2 class="card__name">Подарочный набор №1</h2>
+          <p class="card__description">Набор, состоящий из увлажняющего крема и маски.</p>
+
+          <div class="card__compound compound">
+            <span class="compound__name">СОСТАВ:</span>
+            <ul class="compound__list">
+              <li>воски</li>
+              <li>минералы</li>
+              <li>масла</li>
+            </ul>
+          </div>
+
+
+          <div class="card__price">
+            <b>Цена</b>
+            <span>4 750 &#8381</span>
+            <button class="button button-red">Купить</button>
+          </div>
+        </li>
+
+
+        <li class="products__item card">
+          <img src="assets/gift-set-number-five.jpg" alt="Подарочный набор №5" class="card__image">
+          <span class="card__category">Для нормальной кожи</span>
+          <h2 class="card__name">Подарочный набор №5</h2>
+          <p class="card__description">Весь набор средств Invisible symphony, крем, маска, мусс и гель для умывания.</p>
+
+          <div class="card__compound compound">
+            <span class="compound__name">СОСТАВ:</span>
+            <ul class="compound__list">
+              <li>воски</li>
+              <li>минералы</li>
+              <li>масла</li>
+            </ul>
+          </div>
+
+
+          <div class="card__price">
+            <b>Цена</b>
+            <span>7 520 &#8381</span>
+            <button class="button button-black">Купить</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </main>
 </body>
+
 </html>
