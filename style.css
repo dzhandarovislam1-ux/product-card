@@ -1,41 +1,41 @@
 body {
-    font-family: Arial, sans-serif;
-    font-size: 13px;
-    line-height: 18px;
-}
-.clear-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
 }
 
+.clear-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
 .card {
-    background-color: #f7f7fa;
-    padding: 25px;
-    
+  background-color: #f7f7fa;
+  padding: 25px;
 }
 
 .card__image {
-    display: block;
+  display: block;
 }
 
 .card__category {
-    display: block;
+  display: block;
   font-size: 12px;
   line-height: 18px;
-  color: #A5A3B9;
+  color: #a5a3b9;
   text-transform: uppercase;
   padding-top: 16px;
 }
 
 .card__description {
-    font-size: 15px;
-    line-height: 18px;
-    color: #515086;
-    margin-top: 5px;
-    margin-bottom: 15px;
+  font-size: 15px;
+  line-height: 18px;
+  color: #515086;
+  margin-top: 5px;
+  margin-bottom: 15px;
 }
+
 .card__name {
   font-size: 20px;
   line-height: 28px;
@@ -60,70 +60,64 @@ body {
   padding-top: 20px;
 }
 
-
 .products {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 45px;}
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 45px;
+}
 
 .products__item {
-    width: 340px;
+  width: 340px;
   border-radius: 10px;
   border: 5px solid #e3e3e31a;
 }
 
 .title {
-    font-size: 70px;
-    font-weight: 400px;
-    line-height: 78px;
-    text-align: center;
-    color: #515076;
+  font-size: 70px;
+  font-weight: 400px;
+  line-height: 78px;
+  text-align: center;
+  color: #515076;
 }
 
 .catalog__title {
-    margin-bottom: 110px;
-    margin-top: 220px;
+  margin-bottom: 110px;
+  margin-top: 220px;
 }
 
 .container {
-    width: 1110px;
-    margin: 0 auto;
-}
-.catalog__container{
-    background-image:url(assets/background.jpg);
-    background-repeat:no-repeat;
-    background-position:0 0;
-    padding-top: 1px;
+  width: 1110px;
+  margin: 0 auto;
 }
 
-
-
-
+.catalog__container {
+  background-image: url(assets/background.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  padding-top: 1px;
+}
 
 .button {
-    background-color: #515076;  
-    color: #fff;
-    border: 1px solid #000;
-    border-radius: 5px;
-    padding: 10px 20px;}
-    
+  background-color: #515076;
+  color: #fff;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
 .button-green {
-    background-color: #00ff00;
+  background-color: #00ff00;
 }
+
 .button-blue {
-    background-color: #0000ff;
+  background-color: #0000ff;
 }
+
 .button-red {
-    background-color: #ff0000;
+  background-color: #ff0000;
 }
+
 .button-black {
-    background-color: #000000
+  background-color: #000000;
 }
-
-
-
-
-
-
-    
