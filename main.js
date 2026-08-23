@@ -10,15 +10,14 @@ changeColorCardButton.addEventListener("click", () => {
     card.style.backgroundColor = "blue";
   });
 });
-
 // Покраска первой карточки
 
 const firstProductCard = document.querySelector(".products__item");
-const CnangeColorFirstCardButton = document.querySelector(
+const changeColorFirstCardButton = document.querySelector(
   "#cnange__color__first__card__button",
 );
 
-CnangeColorFirstCardButton.addEventListener("click", () => {
+changeColorFirstCardButton.addEventListener("click", () => {
   firstProductCard.style.backgroundColor = "red";
 });
 
@@ -33,7 +32,6 @@ function openGoogle() {
 
   if (answer === true) {
     window.open("https://google.com");
-  } else {
     return;
   }
 }
