@@ -17,6 +17,7 @@ body {
 
 .card__image {
   display: block;
+  width: 100%;
 }
 
 .card__category {
@@ -64,13 +65,16 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 45px;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
 }
 
 .products__item {
   width: 340px;
   border-radius: 10px;
   border: 5px solid #e3e3e31a;
+  box-sizing: border-box;
 }
 
 .title {
