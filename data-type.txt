@@ -1,0 +1,22 @@
+Namber (NaN) (Число)
+String (строка)
+Boolean (true/false)(логический тип)
+Undefined(не знаем)
+Null(пусто)
+Symbol(Уникальный идентификатор)
+Bight(Очень большое число)
+Object
+
+
++ приводиться все к строке
+-,*,/,>,<, === это все приводиться к числу
+
+number() +
+String() 
+Boolean() !!
+
+0,'',null,Undefined,NaN,false это пустые значения = false
+
+==
+===
+=
