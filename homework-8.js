@@ -28,11 +28,11 @@ console.log(car);
 
 // (4)Написать функцию принимающую объект
 
-car["максимальная скорость"] = 250;
+car.maxSpeed = 250;
 
 function checkSpeed(car) {
-  if (!("максимальная скорость" in car)) {
-    car["максимальная скорость"] = 250;
+  if (!("maxSpeed" in car)) {
+    car.maxSpeed = 250;
   }
 }
 
