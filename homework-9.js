@@ -77,7 +77,7 @@ comments.forEach((comment) => {
 
 console.log(comments);
 
-const emailsMap = comments.map(comment => comment.email);
+const emailsMap = comments.map((comment) => comment.email);
 
 console.log(emailsMap);
 
@@ -86,3 +86,17 @@ const emails = comments.map((comment) => comment.email);
 const emailString = emails.toString();
 
 console.log(emailString);
+
+function findBook(bookName) {
+  if (typeof bookName !== "string") {
+    return "Название книги должен быть строкой";
+  }
+
+  return books.includes(bookName);
+}
+
+console.log(findBook("1984"));
+
+console.log(findBook("Гарри Поттер"));
+
+console.log(findBook(1984));
