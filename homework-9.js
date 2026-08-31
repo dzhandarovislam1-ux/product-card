@@ -34,9 +34,18 @@ const books = [
   },
 ];
 
-const bookExits = books.includes("Колобок");
+function findBook(bookName) {
+  if (typeof bookName !== "string") {
+    return "Название книги должен быть строкой";
+  }
 
-console.log(bookExits);
+  return books.some((book) => book.title === bookName);
+}
+
+console.log(findBook("1984"));
+console.log(findBook("Мастер и Маргарита"));
+console.log(findBook("Колобок"));
+console.log(findBook(1984));
 
 function reverseArray(array) {
   return array.reverse();
@@ -61,8 +70,7 @@ console.log(comments);
 
 const users = comments.map((comment) => ({
   id: comment.id,
-  name: comment,
-  name,
+  name: comment.name,
 }));
 
 console.log(users);
@@ -86,17 +94,3 @@ const emails = comments.map((comment) => comment.email);
 const emailString = emails.toString();
 
 console.log(emailString);
-
-function findBook(bookName) {
-  if (typeof bookName !== "string") {
-    return "Название книги должен быть строкой";
-  }
-
-  return books.includes(bookName);
-}
-
-console.log(findBook("1984"));
-
-console.log(findBook("Гарри Поттер"));
-
-console.log(findBook(1984));
