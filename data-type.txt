@@ -84,7 +84,9 @@ const newArray = numbers.map(numbers => numbers * 2)
 
 return-возвращение
 
-type="module" нужен для того чтобы js мщг использовать import и export 
+
+
+
 
 
 
