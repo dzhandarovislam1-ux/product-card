@@ -1,6 +1,8 @@
-const products = [
+export const IMAGE_PATH = "assets/";
+
+export const products = [
   {
-    image: "assets/moisturizing-mousse.jpg",
+    image: "moisturizing-mousse.jpg",
     category: "Для нормальной кожи",
     name: "Увлажняющий мусс",
     description: "Глубоко увлажняют кожу лица,оставляя её мягкой и гладкой",
@@ -14,7 +16,7 @@ const products = [
   },
 
   {
-    image: "assets/moisturizing-mask.jpg",
+    image: "moisturizing-mask.jpg",
     category: "Для нормальной кожи",
     name: "Увлажняющая маска",
     description: "Способствует удерживанию влаги в верхних слоях кожи",
@@ -24,7 +26,7 @@ const products = [
   },
 
   {
-    image: "assets/cleansing-gel.jpg",
+    image: "cleansing-gel.jpg",
     category: "Для нормальной кожи",
     name: "Гель для умывания",
     description: "Интенсивно очищает,не повреждает защитный барьер кожи",
@@ -38,7 +40,7 @@ const products = [
   },
 
   {
-    image: "assets/gift-set-number-one.jpg",
+    image: "gift-set-number-one.jpg",
     category: "Для нормальной кожи",
     name: "Подарочный набор №1",
     description: "Набор, состоящий из увлажняющего крема и маски",
@@ -48,7 +50,7 @@ const products = [
   },
 
   {
-    image: "assets/gift-set-number-five.jpg",
+    image: "gift-set-number-five.jpg",
     category: "Для нормальной кожи",
     name: "Подарочный набор №5",
     description:
@@ -59,4 +61,3 @@ const products = [
   },
 ];
 
-export default products;

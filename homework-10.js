@@ -1,4 +1,4 @@
-import products from "./product.js";
+import { products, IMAGE_PATH } from "./product.js";
 
 const productsList = document.querySelector(".products");
 
@@ -6,7 +6,7 @@ const createProductCard = (product) => {
   return `
  <li class="products__item card">
  <img
- src="${product.image}"
+ src="${IMAGE_PATH}${product.image}"
  alt="${product.name}"
  class="card__image"
  >
@@ -40,7 +40,6 @@ const renderCards = (products) => {
   productsList.innerHTML = products.map(createProductCard).join("");
 };
 
-
 const productsDescription = products.reduce((acc, product) => {
   acc[product.name] = product.description;
 
@@ -48,7 +47,6 @@ const productsDescription = products.reduce((acc, product) => {
 }, {});
 
 console.log(productsDescription);
-
 
 const getCardsCount = () => {
   let count;
