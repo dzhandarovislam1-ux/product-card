@@ -84,6 +84,14 @@ const newArray = numbers.map(numbers => numbers * 2)
 
 return-возвращение
 
+IMAGE_PATH-путь к изображениям
+
+reduce- собирает все в один результат
+slice-взять часть массива
+querySelector-найти элемент на странице
+prompt-спросить пользователя
+
+()"click", () => {}
 
 
 
