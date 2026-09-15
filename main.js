@@ -1,3 +1,38 @@
+import Modal from "./modal.js";
+import Form from "./form.js";
+
+import "./homework-7.js";
+import "./homework-8.js";
+import "./homework-9.js";
+import "./homework-10.js";
+import "./homework-11.js";
+
+const registrationModal = new Modal("registration_modal");
+
+const registrationForm = new Form("registration_form");
+
+const registrationButton = document.getElementById("registration_button");
+
+registrationButton.addEventListener("click", () => {
+  registrationModal.open();
+});
+
+registrationForm.form.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  if (!registrationForm.checkValidity()) {
+    return;
+  }
+
+  const values = registrationForm.getValues();
+
+  console.log(values);
+
+  registrationForm.reset();
+
+  registrationModal.close();
+});
+
 // Покраска всех карточек
 
 const productCards = document.querySelectorAll(".products__item");
