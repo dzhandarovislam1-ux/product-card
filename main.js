@@ -7,6 +7,7 @@ import "./homework-9.js";
 import "./homework-10.js";
 import "./homework-11.js";
 import "./homework-13.js";
+import "./homework-14.js";
 
 const registrationModal = new Modal("registration_modal");
 
