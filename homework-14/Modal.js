@@ -1,33 +1,20 @@
-export class Modal {
-  #shouldCloseOnOverlay;
-  #overlayClickHandler;
-
+ class Modal {
   constructor(modalId, buttonId, shouldCloseOnOverlay) {
     this.modal = document.getElementById(modalId);
     this.overlay = document.getElementById("overlay");
-    this.#shouldCloseOnOverlay = shouldCloseOnOverlay;
-    this.#overlayClickHandler = () => this.close();
 
     this.#initOpen(buttonId);
-    this.#initClose();
+    this.#initClose(shouldCloseOnOverlay);
   }
 
   open() {
     this.modal.classList.add("modal-showed");
     this.overlay.classList.add("overlay-showed");
-
-    if (this.#shouldCloseOnOverlay) {
-      this.overlay.addEventListener("click", this.#overlayClickHandler);
-    }
   }
-
+  
   close() {
     this.modal.classList.remove("modal-showed");
     this.overlay.classList.remove("overlay-showed");
-
-    if (this.#shouldCloseOnOverlay) {
-      this.overlay.removeEventListener("click", this.#overlayClickHandler);
-    }
   }
 
   isOpen() {
