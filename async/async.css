@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f4f4f4;
+  color: #222;
+  font-family: Arial, sans-serif;
+}
+
+.page {
+  width: min(100% - 32px, 900px);
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.page__header,
+.toolbar {
+  text-align: center;
+}
+
+.page__header {
+  margin-bottom: 24px;
+}
+
+.eyebrow {
+  margin-bottom: 8px;
+  color: #555;
+}
+
+h1 {
+  margin: 0;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 14px;
+  border: 0;
+  border-radius: 4px;
+  background: #286447;
+  color: white;
+  cursor: pointer;
+  font: inherit;
+}
+
+button:hover {
+  background: #1d4d35;
+}
+
+.button--danger,
+.user-card__delete {
+  background: #a83e32;
+}
+
+.button--danger:hover,
+.user-card__delete:hover {
+  background: #842e25;
+}
+
+.status {
+  margin: 24px 0;
+  text-align: center;
+}
+
+.status[data-kind="error"] {
+  color: #a3261b;
+}
+
+.users {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 16px;
+}
+
+.user-card {
+  padding: 18px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: white;
+}
+
+.user-card__id,
+.user-card__details {
+  color: #555;
+}
+
+.user-card__name {
+  margin: 8px 0;
+}
+
+.user-card__details {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 500px) {
+  .page {
+    padding-top: 24px;
+  }
+}
